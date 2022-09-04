@@ -5,17 +5,17 @@ int number = int.Parse(Console.ReadLine ());
 int startNumber = 2;
 
 if (number<0)
-{
-    Console.Write ("Вы ввели отрицателльное число");
-}
-else
-{
-    while (startNumber <= number)
     {
-        
-            Console.Write ($"{startNumber} ");
-        startNumber = startNumber + 2;  
+        Console.Write ("Вы ввели отрицателльное число");
     }
-    Console.Write ($"- четные числа между 1 и {number}");  
-}
+else
+    {
+        while (startNumber <= number)
+            {
+                
+                Console.Write ($"{startNumber} ");
+                startNumber = startNumber + 2;  
+            }
+        Console.Write ($"- четные числа между 1 и {number}");  
+    }
 
