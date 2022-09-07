@@ -1,7 +1,7 @@
 ﻿// Программа находит квадрат числа
 // Определение числа
 Console.WriteLine ("Введите число: ");
-int number = int.Parse(Console.ReadLine ());
+int number = Convert.ToInt32(Console.ReadLine ());
 
 // Получение квадрата
 int result = number*number;

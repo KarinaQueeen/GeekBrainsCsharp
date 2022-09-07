@@ -1,8 +1,8 @@
 ﻿// Программа сравнивает два числа
 
 Console.WriteLine ("Введите два числа для сравнения: ");
-int number_1 = int.Parse(Console.ReadLine ());
-int number_2 = int.Parse(Console.ReadLine ());
+int number_1 = Convert.ToInt32(Console.ReadLine ());
+int number_2 = Convert.ToInt32(Console.ReadLine ());
 
 if (number_1 > number_2)
     {

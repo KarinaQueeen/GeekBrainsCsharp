@@ -1,7 +1,7 @@
 ﻿// Программа ввыводит все четные числа от 1 до N, которое вводит пользователь
 
 Console.WriteLine("Введите положительное число: ");
-int number = int.Parse(Console.ReadLine ());
+int number = Convert.ToInt32(Console.ReadLine ());
 int startNumber = 2;
 
 if (number<0)

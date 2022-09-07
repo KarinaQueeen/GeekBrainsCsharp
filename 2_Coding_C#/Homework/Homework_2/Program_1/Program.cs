@@ -1,20 +1,12 @@
 ﻿// Программа выводит второую цифру у трехзначного числа
 
 Console.Write ("Введите трехзначное число: ");
-int [] array = {int.Parse(Console.ReadLine())};
+int a = Convert.ToInt32 (Console.ReadLine());
+int b = Math.Abs(a);
+int c = b/10%10;
 
-//??????????
-
-int size = array.length;
-int index = 0;
-int secondIndex = 1;
-while (index <size)
-
-if (array [index] == secondIndex)
-
-Console.WriteLine($"{array [index]} вторая цифра числа {array}.");
-index++;
-
-
+if ((b/100)>=1)
+if ((b/1000)<1)
+Console.WriteLine($"{c} вторая цифра числа {a}.");
 else
-Console.WriteLine($"Число {array} не трехзначное.");
+Console.WriteLine($"Число {a} не трехзначное.");

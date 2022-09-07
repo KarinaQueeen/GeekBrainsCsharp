@@ -1,7 +1,7 @@
 ﻿// Программу определяет по номеру название дня недени
 
 Console.WriteLine ("Введите номер дня недели (от 1 до 7): ");
-int number = int.Parse(Console.ReadLine ());
+int number = Convert.ToInt32(Console.ReadLine ());
 
 if(number == 1)
     {
