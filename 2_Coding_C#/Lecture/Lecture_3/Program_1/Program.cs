@@ -15,7 +15,7 @@ void Method2 (string a)
 Method2 ("Текст");
 
 
-void Method2 (string a, int count)
+void Method22 (string a, int count)
     {
         int i = 0;
         while (i < count)
@@ -24,7 +24,7 @@ void Method2 (string a, int count)
                 i++;
             }
     }
-Method2 ("Текст", 3);   // ("Текст", 3) или (a: "Текст",count: 3) или (count: 3, a: "Текст")
+Method22 ("Текст", 3);   // ("Текст", 3) или (a: "Текст",count: 3) или (count: 3, a: "Текст")
 
 
 // 3 метод (не принимает/возвращает)
@@ -56,7 +56,7 @@ string a = Method4 (10, "текст");
 Console.WriteLine(a);
 
 
-string Method4 (int count, string text)
+string Method42 (int count, string text)
     {
         string result = String.Empty; 
         for (int i = 0; i < count; i++)
@@ -65,5 +65,8 @@ string Method4 (int count, string text)
             }
         return result;
     }
+string с = Method42 (10, "текст");
+Console.WriteLine(с);
 
+//????
 
