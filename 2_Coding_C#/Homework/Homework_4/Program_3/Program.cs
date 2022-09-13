@@ -16,11 +16,11 @@ int [] MetodArray (int a, int b, int c, int d, int e, int f, int g, int h)
 
 void PrintArray (int [] array)
 {
-for (int i = 0; i < array.Length; i++)
-{
-    Console.Write ($"{array [i]} ");
-}
-return;
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write ($"{array [i]} ");
+    }
+    return;
 }
 
 try
@@ -45,6 +45,7 @@ try
     int [] array = MetodArray (a, b, c, d, e, f, g, h);
     PrintArray (array);
 }
+
 catch
 {
    Console.Write ("Ошибка: не верно введены данные."); 
