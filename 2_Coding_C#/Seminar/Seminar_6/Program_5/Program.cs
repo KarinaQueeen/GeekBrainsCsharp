@@ -1,31 +1,30 @@
 ﻿// Программа выводит числа Фибоначи
 
-int Fibonacci (int n)
+int [] GetFibonacci (int numbers)
 {
-   if (n==0) 
-    {
-      return 0; 
-    }   
-     if (n==1) 
-    {
-      return 1; 
-    }        
-     if (n==2) 
-    {
-      return 1; 
-    }                
-    else 
-    {
-      n = (n-1) + (n-2);
-    
-    return n;
+    int [] array = new int [numbers];
 
+    for (int i = 0; i < numbers; i++)
+    {
+        if (i == 0) array[i] = 0;
+        else if (i == 1 || i == 2) array[i] = 1;
+        else array[i] = array [i - 2] + array [i - 1];
     }
+        return array;
 }
 
-for (int i = 0; i < 15; i++)
+void PrintArray (int [] array)
 {
-   Console.Write ($"{Fibonacci(i)} ");
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write ($"{array [i]} ");
+    }
+    return;
 }
-// ???
 
+Console.WriteLine("Введите количество чисел Фибоначи:");
+int numbers = Convert.ToInt32(Console.ReadLine());
+
+int [] fibonacci = GetFibonacci(numbers);
+Console.WriteLine($"Первые {numbers} чисел Фибоначи: ");
+PrintArray (fibonacci);
