@@ -12,3 +12,5 @@ else
     {
         Console.WriteLine ($"{number_1} не является квадратом числа {number_2}");
     } 
+
+    
