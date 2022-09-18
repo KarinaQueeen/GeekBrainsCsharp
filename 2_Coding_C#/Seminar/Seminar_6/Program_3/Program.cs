@@ -16,3 +16,7 @@ Console.Write("Введите размер 3 стороны треугольни
 int c = Convert.ToInt32 (Console.ReadLine ());
 bool abc = Triangle (a, b, c);
 Console.WriteLine(abc);
+
+
+//
+//\jjklp[;]
