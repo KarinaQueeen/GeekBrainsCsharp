@@ -18,5 +18,3 @@ bool abc = Triangle (a, b, c);
 Console.WriteLine(abc);
 
 
-//
-//\jjklp[;]
