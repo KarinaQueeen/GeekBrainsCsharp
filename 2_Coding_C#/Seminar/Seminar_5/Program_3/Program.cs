@@ -11,7 +11,6 @@ bool Metod (int [] array, int number)
             break;
        }
        else result = false;
-       
     }
     return result;
 }
@@ -24,7 +23,6 @@ try
     var result = Metod (array, number);
     Console.WriteLine(result);
 }
-
 catch
 {
     Console.Write ("Ошибка: не верно введены данные.");

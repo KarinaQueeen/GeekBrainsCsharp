@@ -50,7 +50,6 @@ try
     PrintArray (array);
     Console.Write ($"= {quantityNumbers}");
 }
-
 catch
 {
     Console.Write ("Ошибка: не верно введены данные.");

@@ -7,10 +7,8 @@ string Metod (string text, char oldSim, char newSim)
 
     for (int i = 0; i < size; i++)
     {
-        if (text [i] == oldSim ) 
-        result = result + $"{newSim}";
-        else 
-        result = result + $"{text[i]}";
+        if (text [i] == oldSim ) result = result + $"{newSim}";
+        else result = result + $"{text[i]}";
     }
     return result;
 }

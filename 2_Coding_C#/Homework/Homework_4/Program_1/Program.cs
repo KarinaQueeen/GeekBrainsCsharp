@@ -29,9 +29,7 @@ try
     else
     {
         Console.Write ($"{a} в степени {b} = {degreeAB} ");      
-    }
-    
-    
+    } 
 }
 catch
 {

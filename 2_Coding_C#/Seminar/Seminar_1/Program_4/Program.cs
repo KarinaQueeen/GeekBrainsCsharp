@@ -6,7 +6,7 @@ int number = Convert.ToInt32(Console.ReadLine ());
 int startNumber = Math.Abs(number)*-1; // Преобразование числа в положительное
 
 while (startNumber <= number)
-    {
-        Console.Write ($"{startNumber} ");
-        startNumber++;
-    }
+{
+    Console.Write ($"{startNumber} ");
+    startNumber++;
+}

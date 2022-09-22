@@ -2,7 +2,7 @@
 
 int[] GetArray (int size, int start, int end)
 {
-    var array = new int [size];    //var автоматически определяет тип данных
+    var array = new int [size];    
 
     for (int i = 0; i < array.Length; i++)
     {
@@ -27,7 +27,7 @@ int SumPositiveNumbers (int [] array)
     {
         if (array [i] > 0)
         {
-        sum = sum +array [i];  
+            sum = sum +array [i];  
         }
     }
     return sum;
@@ -56,7 +56,6 @@ try
     Console.WriteLine($"Сумма положительных чисел массива = {sum1}");
     Console.WriteLine($"Сумма отрицательных чисел массива = {sum2}");
 }
-
 catch
 {
     Console.Write ("Ошибка: не верно введены данные.");

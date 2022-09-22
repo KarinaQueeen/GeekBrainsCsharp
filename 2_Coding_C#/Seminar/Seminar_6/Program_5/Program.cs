@@ -10,7 +10,7 @@ int [] GetFibonacci (int numbers)
         else if (i == 1 || i == 2) array[i] = 1;
         else array[i] = array [i - 2] + array [i - 1];
     }
-        return array;
+    return array;
 }
 
 void PrintArray (int [] array)

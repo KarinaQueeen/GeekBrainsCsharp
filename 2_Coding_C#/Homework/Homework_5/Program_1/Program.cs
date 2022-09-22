@@ -34,7 +34,6 @@ int [] Metod (int[] array)
         newArray[size - 1] = array[size - 1];
         return newArray; 
     }
-    
 }
 
 void PrintArray (int [] array)
@@ -58,7 +57,6 @@ try
     int [] newArray = Metod (array);
     PrintArray (newArray);
 }
-
 catch
 {
     Console.Write ("Ошибка: не верно введены данные.");

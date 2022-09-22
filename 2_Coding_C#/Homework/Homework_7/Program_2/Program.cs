@@ -41,7 +41,6 @@ try
 
     Console.WriteLine($"({array [x - 1, y - 1]}) тот самый элемент!");
 }
-
 catch
 {
    Console.WriteLine("Такого элемента не существует!"); 

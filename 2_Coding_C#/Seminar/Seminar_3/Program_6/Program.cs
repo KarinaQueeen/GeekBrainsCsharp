@@ -3,13 +3,13 @@
 int [] Metod (int number)
 {
     int [] array = new int[number]; 
-for (int i = 1; i<=number; i++)
+    for (int i = 1; i<=number; i++)
     {
         array [i-1]=i*i;
-      } 
-        return array;
-   
-    }
+    } 
+    return array;
+}
+
 Console.Write("Введите число: ");
 int a = Convert.ToInt32 (Console.ReadLine());
 

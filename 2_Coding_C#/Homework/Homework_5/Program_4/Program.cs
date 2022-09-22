@@ -35,20 +35,18 @@ double MinNumber (double[] array)
     return minNumber;
 }
 
-
 double DifferenceMinMaxNumbers (double max, double min)
 {
     double difference = max - Math.Abs(min);
-   
     return difference;
 }
 
-    double[] array = {1.1, 5.3, 18, 6, 2.5, -5.55, 0, -1.1};
+double[] array = {1.1, 5.3, 18, 6, 2.5, -5.55, 0, -1.1};
     
-    double max = MaxNumber (array);
-    double min = MinNumber (array);
-    double diff = DifferenceMinMaxNumbers (max, min);
+double max = MaxNumber (array);
+double min = MinNumber (array);
+double diff = DifferenceMinMaxNumbers (max, min);
     
-    Console.Write ($"Разница между максимальным и минимальным числом массива: ");
-    PrintArray (array);
-    Console.Write ($"= {diff}");
+Console.Write ($"Разница между максимальным и минимальным числом массива: ");
+PrintArray (array);
+Console.Write ($"= {diff}");

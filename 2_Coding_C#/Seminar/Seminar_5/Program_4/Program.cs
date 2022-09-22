@@ -47,7 +47,6 @@ try
     Console.WriteLine();
     Console.WriteLine($"Количество чисел в массиве из диапазона (10, 99) = {sumNumber}");
 }
-
 catch
 {
     Console.Write ("Ошибка: не верно введены данные.");

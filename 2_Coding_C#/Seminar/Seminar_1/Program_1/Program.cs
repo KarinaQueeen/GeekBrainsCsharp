@@ -1,12 +1,12 @@
 ﻿// Программа находит квадрат числа
-// Определение числа
+
 Console.WriteLine ("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine ());
 
-// Получение квадрата
-int result = number*number;
-Console.WriteLine ($"Квадрат числа {number} = {result}"); 
+int result_1 = number*number;
+Console.WriteLine ($"Квадрат числа {number} = {result_1}"); 
 
-// Получение квадрата входного числа с помощью математического уравнения 
-int result_2 = Convert.ToInt32(Math.Pow (number, 2));   //Преобразование ???
+// или
+
+int result_2 = Convert.ToInt32(Math.Pow (number, 2));  
 Console.WriteLine ($"Квадрат числа {number} = {result_2}");

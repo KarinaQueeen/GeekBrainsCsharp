@@ -32,7 +32,6 @@ int SumEvenPlaceNumbers (int[] array)
         {
             sum = sum + array [i];    
         }
-        
     }
     return sum;
 }
@@ -54,7 +53,6 @@ try
     PrintArray (array);
     Console.Write ($"= {sumNumbers}");
 }
-
 catch
 {
     Console.Write ("Ошибка: не верно введены данные.");

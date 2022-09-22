@@ -18,9 +18,8 @@ int Metod (int number)
             sum = sum + i; 
         }   
     }
-        return sum;
+    return sum;
 }
-
 
 try
 {

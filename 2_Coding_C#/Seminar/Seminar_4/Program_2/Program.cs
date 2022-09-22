@@ -10,7 +10,6 @@ int Metod (int number)
         num = num / 10;
         index++;
     }   
-
     return index;
 }
 

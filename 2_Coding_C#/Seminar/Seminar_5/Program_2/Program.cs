@@ -17,11 +17,12 @@ int [] Metod (int [] array)
     }
     return array;
 }
-    Console.Write("Было: ");
-    int [] array = {5, -4, 5, -1, 0};
-    PrintArray (array);
-    Console.WriteLine();
-    Console.Write("Стало: ");
-    int [] newArray = Metod (array);
-    PrintArray (newArray);
+
+Console.Write("Было: ");
+int [] array = {5, -4, 5, -1, 0};
+PrintArray (array);
+Console.WriteLine();
+Console.Write("Стало: ");
+int [] newArray = Metod (array);
+PrintArray (newArray);
 

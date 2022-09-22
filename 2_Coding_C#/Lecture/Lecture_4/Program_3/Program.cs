@@ -36,7 +36,7 @@ int [,] love = new int [,]
      {0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0},
 };
 
-void PrintImage (int [,] image)                             // метод выводит картинку на экран
+void PrintImage (int [,] image)                           
 {
     for (int i = 0; i < image.GetLength(0); i++)    
     {
@@ -52,12 +52,12 @@ void PrintImage (int [,] image)                             // метод выв
 PrintImage (love);
 
 
-void FillImage (int [,] matrix, int x, int y)                //метод закрашивает картинку (указать первую точку с которой будет закрашиваться)  
+void FillImage (int [,] matrix, int x, int y)                // метод закрашивает картинку (указать первую точку с которой будет закрашиваться)  
 {
     if (matrix [x, y] == 0)
     {
         matrix [x, y] = 1;
-        FillImage (matrix, x-1, y);                          //рекурсия - метод вызывает сам себя
+        FillImage (matrix, x-1, y);                          // рекурсия - метод вызывает сам себя
         FillImage (matrix, x, y-1);
         FillImage (matrix, x+1, y); 
         FillImage (matrix, x, y+1);                             

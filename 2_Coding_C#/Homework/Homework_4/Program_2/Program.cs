@@ -1,4 +1,4 @@
-﻿//Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+﻿// Программу выдаёт сумму цифр в числе.
 
 int MetodSumNumbers (int num)
 {
@@ -20,7 +20,6 @@ try
     int sum = MetodSumNumbers (number);
     Console.Write ($"Сумма всех цифр в числе {number} = {sum}");
 }
-
 catch
 {
     Console.Write ("Ошибка: не верно введены данные.");

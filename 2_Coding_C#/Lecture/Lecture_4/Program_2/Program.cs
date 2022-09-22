@@ -12,7 +12,7 @@ void PrintArray (int [,] matr)
     }
 }
 
-void FillArray (int [,] matr)                                  //заполняет массив случайными значениями
+void FillArray (int [,] matr)                              
 {
     for (int i = 0; i < matr.GetLength(0); i++)    
     {

@@ -8,13 +8,13 @@ _____|_____
 */
 
 int Metod (int x, int y)
-    {
-        if (x>0 && y>0) return 1;
-        if (x>0 && y<0) return 2;
-        if (x<0 && y<0) return 3;
-        if (x<0 && y>0) return 4;
-        return 0;
-    }
+{
+    if (x>0 && y>0) return 1;
+    if (x>0 && y<0) return 2;
+    if (x<0 && y<0) return 3;
+    if (x<0 && y>0) return 4;
+    return 0;
+}
 
 Console.Write ("Введите координату x: ");
 int x = Convert.ToInt32 (Console.ReadLine ());

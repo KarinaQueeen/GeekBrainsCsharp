@@ -6,5 +6,5 @@ for (int i = 2; i<=10; i++)
   {
     Console.WriteLine($"{i} * {j} = {i*j}");
   }  
-  Console.WriteLine();     //пустая строка
+  Console.WriteLine();    
 }

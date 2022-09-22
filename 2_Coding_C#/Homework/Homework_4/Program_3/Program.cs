@@ -45,7 +45,6 @@ try
     int [] array = MetodArray (a, b, c, d, e, f, g, h);
     PrintArray (array);
 }
-
 catch
 {
    Console.Write ("Ошибка: не верно введены данные."); 
