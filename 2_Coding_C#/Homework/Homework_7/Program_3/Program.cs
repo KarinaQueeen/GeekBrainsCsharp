@@ -66,7 +66,6 @@ try
     double [] arithmeticMeanArray = ArithmeticMeanColumn (array);
     PrintOneArray (arithmeticMeanArray);
 }
-
 catch
 {
    Console.Write ("Неверно введены данные!");
