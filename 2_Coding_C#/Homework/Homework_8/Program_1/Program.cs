@@ -31,15 +31,15 @@ void Sort (int [,] newArray)
     {
         for (int i = 0; i < newArray.GetLength(1); i++)
         {
-            int indexMin = i;
+            int indexMax = i;
             for (int j = i + 1; j < newArray.GetLength(1); j++)   
             {
-                if (newArray [k, j] < newArray [k, indexMin])
-                indexMin = j;
+                if (newArray [k, j] > newArray [k, indexMax])
+                indexMax = j;
             }
             int x = newArray [k, i];                          
-            newArray [k, i] = newArray [k, indexMin];                
-            newArray [k, indexMin] = x;
+            newArray [k, i] = newArray [k, indexMax];                
+            newArray [k, indexMax] = x;
         } 
     }
 }

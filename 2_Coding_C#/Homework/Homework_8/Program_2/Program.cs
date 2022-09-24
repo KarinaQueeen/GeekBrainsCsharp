@@ -7,7 +7,7 @@ int [,] GetNewArray (int m, int n)
     {
         for (int j = 0; j < n; j++)
         {
-            newArray [i, j] = new Random ().Next (-10,10);
+            newArray [i, j] = new Random ().Next (0,10);
         }
     }
     return newArray;

@@ -22,11 +22,6 @@ int [,,] GetNewArray (int k, int m, int n)
             }            
         }
     }
-
-
-
-
-    
     return newArray;
 }
 
