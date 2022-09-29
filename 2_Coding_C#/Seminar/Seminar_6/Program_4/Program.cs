@@ -9,10 +9,10 @@ string b = "";
 while (a != 0)
 {
    b += Convert.ToString (a % 2);
-   a=a/2;
+   a = a / 2;
 }
 for (int i = 0; i < b.Length; i++)
 {
-    Console.Write(b[b.Length-1-i]);
+    Console.Write(b[b.Length - 1 - i]);
 }
 

@@ -51,7 +51,6 @@ void PrintImage (int [,] image)
 
 PrintImage (love);
 
-
 void FillImage (int [,] matrix, int x, int y)                // метод закрашивает картинку (указать первую точку с которой будет закрашиваться)  
 {
     if (matrix [x, y] == 0)

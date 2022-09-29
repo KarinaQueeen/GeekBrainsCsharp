@@ -12,10 +12,9 @@ int MetodDegree (int number, int  degree)
             result = result * number;
         }  
     }
-    if (degree<0) result = -1;
+    if (degree < 0) result = -1;
     return result;
 }
-
 try
 {
     Console.Write ("Введите число: ");
@@ -26,10 +25,7 @@ try
 
     int degreeAB = MetodDegree (a,b);
     if (degreeAB == -1) Console.Write("Степень должна быть положительной!");
-    else
-    {
-        Console.Write ($"{a} в степени {b} = {degreeAB} ");      
-    } 
+    else Console.Write ($"{a} в степени {b} = {degreeAB} ");      
 }
 catch
 {

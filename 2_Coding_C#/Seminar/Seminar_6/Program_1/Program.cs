@@ -1,6 +1,6 @@
 ﻿// Программа перевернет массив с помощью дополнительного массива
 
-int[] GetArray (int size)
+int [] GetArray (int size)
 {
     var array = new int [size];
 
@@ -30,7 +30,6 @@ int [] Metod (int[] array)
     return newArray; 
 }
     
-
 int[] arr = GetArray (9);
 PrintArray (arr);
 Console.WriteLine();

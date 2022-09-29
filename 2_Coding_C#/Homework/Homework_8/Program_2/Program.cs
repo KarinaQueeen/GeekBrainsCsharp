@@ -65,7 +65,6 @@ try
     int [] sum = SumLine (array);
     int indexMinSum = NumberMinSumLine (sum);
     Console.WriteLine($"Минимальная сумма ({sum [indexMinSum]}) в {indexMinSum + 1} строке.");
- 
 }
 catch
 {

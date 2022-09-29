@@ -8,7 +8,6 @@ try
     int b = a * a;
     Console.WriteLine($"Квадрат {a} = {b}."); 
 }
-
 catch
 {
     Console.WriteLine("Неверный ввод."); 

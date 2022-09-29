@@ -1,6 +1,6 @@
 ﻿// Программа выдает массив из 12 элементов от -9 до 9 и показыает сумму положительных и отрицательных чисел
 
-int[] GetArray (int size, int start, int end)
+int [] GetArray (int size, int start, int end)
 {
     var array = new int [size];    
 
@@ -27,7 +27,7 @@ int SumPositiveNumbers (int [] array)
     {
         if (array [i] > 0)
         {
-            sum = sum +array [i];  
+            sum = sum + array [i];  
         }
     }
     return sum;
@@ -40,7 +40,7 @@ int SumNegativeNumbers (int [] array)
     {
         if (array [i] < 0)
         {
-            sum = sum +array [i];  
+            sum = sum + array [i];  
         }
     }
     return sum;

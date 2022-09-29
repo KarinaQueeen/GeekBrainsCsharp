@@ -4,11 +4,11 @@ int [] ReversArray (int [] array)
 {
     int tempStorage = array [0];
 
-    for (int i = 0; i < array.Length/2; i++)
+    for (int i = 0; i < array.Length / 2; i++)
     {
         tempStorage = array [i];
-        array [i] = array [array.Length-1-i];
-        array [array.Length-1-i] = tempStorage;
+        array [i] = array [array.Length - 1 - i];
+        array [array.Length - 1 - i] = tempStorage;
     }
     return array;
 }
@@ -28,7 +28,7 @@ void PrintArray (int [] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write (array [i] +" ");
+        Console.Write (array [i] + " ");
     }
     return;
 }

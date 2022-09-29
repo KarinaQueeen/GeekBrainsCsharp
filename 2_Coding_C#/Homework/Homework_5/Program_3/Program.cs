@@ -1,6 +1,5 @@
 ﻿// Программа найдет сумму элементов массива, стоящих на нечётных позициях 
 
-
 int[] GetArray (int size, int startArray, int finishArray)
 {
     int[] array = new int [size];
@@ -12,7 +11,6 @@ int[] GetArray (int size, int startArray, int finishArray)
    return array;     
 }
 
-
 void PrintArray (int [] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -21,7 +19,6 @@ void PrintArray (int [] array)
     }
     return;
 }
-
 
 int SumEvenPlaceNumbers (int[] array)
 {

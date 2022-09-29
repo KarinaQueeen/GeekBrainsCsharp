@@ -11,7 +11,6 @@ int[] GetArray (int size, int startArray, int finishArray)
    return array;     
 }
 
-
 void PrintArray (int [] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -20,7 +19,6 @@ void PrintArray (int [] array)
     }
     return;
 }
-
 
 int QuantityEvenNumbers (int[] array)
 {

@@ -11,12 +11,12 @@ int[] GetArray (int size)
     return array;
 }
 
-int Metod (int[] array, int start, int end)
+int Metod (int [] array, int start, int end)
 {
     int sum = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i]>start && array[i]<end+1)
+        if (array [i] > start && array [i] < end + 1)
         sum ++;
     }
     return sum;
