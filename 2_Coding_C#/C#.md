@@ -691,14 +691,160 @@ null используется только с ссылочными типами
 
 *(Используется для инициализации для неявно типизированных переменных)* 
 
+    enum DayOfWeek                                          // группировка объектов
+    {
+        Monday = 1,                                         // если не присвоить значения автоматически начинается с 0 и увеличиваются на 1
+        Tuesday,
+        Wednesday;
+        Thursday;
+        Friday;
+        Saturday;
+        Sunday;
+    }    
+
+*(в enum перечислениях используется тип данных int, для изменения типа данных необходимо привести к нужному типу данных (enum DayOfWeek: byte {}))*
+
+    DayOfWeek GetNextDay (DayOfWeek day)
+    {
+        if (day < DayOfWeek.Sunday)
+        {
+            return day + 1;
+        }
+        return DayOfWeek.Monday;
+    }
+
+    void Main (string [] a)
+    {
+        DayOfWeek day = DayOfWeek.Friday;
+        Console.WriteLine (day);                 // Friday 
+        Console.WriteLine ((int) day);           // приводим DayOfWeek к int
+        Console.WriteLine ((DayOfWeek)5);        // приводим int к DayOfWeek
+        Console.WriteLine (GetNextDay (day));    // Saturday
+    }
+___
+    while (true)
+    {
+        ConsoleKey key = Console.Readkey().Key;
+        int keyCode = int (key);
+        Console.WriteLine ($"\t Enum {key} \t Key Code {keyCode}");
+        if (key == ConsoleKey.Enter)
+        {
+            Console.WriteLine ("Вы нажали Enter");
+        }
+    }
+___
+
+    DayOfWeek day;
+
+    int num = 55;
+
+    if (Enum.IsDefined (typeof(DayOfWeek), num))                   // (тип данных, полученное число)
+    {
+        day = (DayOfWeek) num;
+    }
+    else
+    {
+        throw new Exception ("Invalid DayOfWeek value");           // ошибка
+    }
+    Console.WriteLine (day);
+
+*(IsDefined проверяет есть ли в enum полученный элемент)*
+
+    string str = Console.ReadLine();
+    DayOfWeek day = (DayOfWeek) Enum.Parse (typeof (DayOfWeek), str, ignoreCase: true)
+               | преобразовать | распарсить |  принимает  |   текст   | не учитывать |
+               | в тип данных  |   в enum   | тип данных  |           | размер букв  |
+               | нужного enum  |            |             | 
+    Console.WritLine (day);
+
+*(Нахождение элемента введенного в Console в enum)*
+
+## ООП (Объектно-ориентированное программирование)
+
+    y
+  5-|    .
+  4-|
+  3-|
+  2-|           .
+  1-|
+  0-+---------------x
+    0  1  2  3  4  5 
+
+Точка может иметь свойства: координата x, координата y, цвет и т.д.
+
+    enum Color
+    {
+        Red,
+        Green,
+        Orange,
+        Yellow,
+        Rlue
+    }
+
+    class MyClass                                      // класс - новый тип данных
+    {
+        public int x;                                  // поля класса
+        public int y;
+        public Color c;
+    }
+
+    MyClass a = new MyClass ();
+    a.x = 2;
+    a.y = 5;
+    a.c = Color.Orange;
+
+    MyClass b = new MyClass ();
+    b.x = 4;
+    b.y = 2;
+    b.c = Color.Blue;
+
+*(Класс MyClass, a, b объекты класса (экземпляры))*
+
     public
     private                          // для личного использования методом
 
 *(Модификаторы доступа. Если не указывается модификатор то автоматически присваивается private, если метод с модификатором public вызывает метод с модификатором private он станет private)*
 
+инкапсуляция - принцип независимости данных (могут быть скрыты свойства или функционал, который необходим для его функционирования)
+
+наследование - процесс наследования свойств другого объекта с добавлением своих
+
+полиморфизм - возможность объекта вести себя по разному в зависимости от обстоятельств
+
+    static void Main ()
+
+*(Место начала работы программы)*
+
+    MyClass a = new MyClass ();
+
+*(new MyClass() - конструктор класса, вызывается для создания класса, если не создавать его, то он задается автоматически у всех классов в виде "new тип данных ()")*
+
+    public MyClass ()                                                      // присвоить значения в конструкторе
+    {
+        x = 0;
+        y = 0;                                                           
+    }
+
+    public MyClass (присвоить значения)                                    // значение будет присвоено только в конструкторе, на значение поля класса не повлияет
+    {
+        
+    }
+
+    public MyClass (int x, int y)                                          // присваиваем значения из конструктора значениям полей класса
+    {
+        this.x = x;
+        this.y = y;
+    }
+
+*(Для быстрого создания используется ctor + TAB TAB)*
+
+*(CTRL + F2 заменить название переменной во всей программе)*
 
 
 
+
+
+new DataTime (,,) - создание даты
 
 Math.Abs // Преобразование числа в положительное
 Math.Sqrt квадратный корень и Math.Pow возведение в квадрат
