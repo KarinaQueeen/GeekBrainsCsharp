@@ -840,9 +840,133 @@ ___
 
 *(CTRL + F2 заменить название переменной во всей программе)*
 
+    class Point
+    {
+        private int x;
+        public void SetX (int x)                                          // сетер - метод позволяющий установить значение
+        {
+            this.x = x;
+        }
+
+        public int GetX ()                                               // гетер - метод вывода
+        {
+            return x;
+        }
+    }
+___
+
+    class Point
+    {
+        private int x;
+        public int X
+        {
+            get {return x; }                                            // аксессоры
+            set {x = value; }
+        }
+    }
+
+    point.X = 10;
+    int x = point.Y;
+
+*(Свойства (Properties) propfull + TAB TAB)*
+
+    public int x {get; set; }
+
+*(Автоматические свойства)*
+
+    class MyClass
+    {
+        public int a;
+        public static int b;
+    }
+
+    MyClass class = new MyClass ();
+    class.a = 44;
+
+    MyClass.b = 55;                                      // к статическим данным необходимо обращаться на уровне класса
+
+*(Статичекие поля класса позволяют всем объектам класса иметь одино одинаковое поле)*
+
+    public static void Metod ()
+    {
+        может использовать поля и методы только static
+    }
+    
+    public void Metod ()
+    {
+        может использовать поля и методы как static, так и нет
+    }
+
+*(Статические методы, пример "Console.", "Array.")*
+
+    class MyClass
+    {                                         _
+        public MyClass ()                      |
+        {                                      |_ (конструктор класса)
+            count++;                           |
+        }                                     _|
+
+                                              _
+        private static int count;             _|- (поле класса)
+
+                                              _
+        public static int Count                |
+        {                                      |
+            get {return count; }               |- (свойство класса)
+            set {count = value; }              |
+        }                                     _|
+    }
+
+    MyClass a = new MyClass();
+    MyClass b = new MyClass();
+    MyClass c = new MyClass();
+
+    Console.WreadLine (MyClass.Count);        // 3
+  
+*(Статические свойства)*
+
+*(Статический класс)*
+
+83-85
+
+Extension
+методы расширения
+должны находиться в статическом классе 
+86-87
+
+public const int ABC = 1;      // не возможно изменить параметр, обязательно задать значение, обычно константные поля записываются большими буквами, объявляется до компиляции
+
+88
+public readonly int ABC;        // задать значение можно в конструкторе либо при инициализации, изменить в методах нельзя
+
+
+модификаторы const readonly
+
+    MyClass a = new MyClass ();
+    a.Name = "Имя";
+    a.Age = 10;
+
+    MyClass a = new MyClass
+    {
+        Age = 10,
+        Name = Имя
+    }
+
+инициализация объектов класса
+
+    Новый класс: родительский класс
+    {
+
+    }
+
+наследование помогает избежать ненужного дублирования кода
 
 
 
+правой кнопкой мыши new item диаграмма классов для просмотра наглядно наследований классов
+
+
+*(Статический конструктор. В любом классе может быть только один статический конструктор и он не принимает параметры. Вызывается один раз в момент обращения к классу)*
 
 new DataTime (,,) - создание даты
 
